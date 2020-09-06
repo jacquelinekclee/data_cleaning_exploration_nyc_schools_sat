@@ -4,17 +4,13 @@
 
 - [Background](#background)
 - [The Data](#the-data)
-- [Usage](#usage)
+- [Linear Regression and Scatter Plot](#linear-regression-and-scatter-plot)
 - [Development](#development)
-- [Contribute](#contribute)
-    - [Sponsor](#sponsor)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
-- [License](#license)
-- [Footer](#footer)
+- [Legality](#legality)
 
 # Background
 
-College Board SAT, the most common college admissions test, has been accused of being biased against certain racial groups and socioeconomic classes on numerous occasions. Since the COVID-19 pandemic, many higher education institutions are suspending their testing requirements, due to accessibility issues.
+College Board SAT, the most common college admissions test, has been accused of being biased against certain racial groups and socioeconomic classes on numerous occasions. Since the COVID-19 pandemic, [many higher education institutions are suspending their testing requirements, due to accessibility issues](https://www.collegelifetoday.com/tips/organizing/college-not-requiring-sat/).
 
 With these things in mind, I wanted to find out how much SAT scores vary across students/schools of different demographics and whether or not there is any sort evidence for these claims of the SAT's unfairness. I utilized data from New York City high schools that detail the class of 2012's [SAT scores](https://data.cityofnewyork.us/Education/2012-SAT-Results/f9bf-2cp4) and the [demographics](https://data.cityofnewyork.us/Education/School-Demographics-and-Accountability-Snapshot-20/ihfw-zy9j) of such schools. 
 
@@ -24,70 +20,45 @@ After cleaning the data, creating visualizations and performing exploratory data
 
 # The Data
 
-Here are 
+For how I cleaned the data, please refer to this [Jupyter Notebook](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/data_cleaning_sat_ny.ipynb) (located in this repository).
+
+Here are some example visualizations. The barplot shows the distribution of NYC schools' average SAT scores; the center hovers around 1200 out of a maximum score of 2400 and there are several outliers. The boxplot shows how 'frl_percent,' the percent of students at a given school who receive free/reduced lunches, values differ across schools' average SAT scores in the different score ranges.
+
+![boxplot](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/sat_boxplot.png?raw=true)
+![barplot](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/frl_barplot.png?raw=true)
+
+Below is an example histograms drawn to compare the SAT score distributions of schools with demographic against each other, as well as the expected nationwide distribution. This example illustrates that NYC schools with predominantly Asian or White students often score at or above the nationwide average. To see the code that created these visualizations and a more in depth explanation of them, refer to this [Jupyter Notebook](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/viz_eda_sat_ny.ipynb) (located in this repository)
+
+![histogram](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/aw_hist.png?raw=true)
 
 [(Back to top)](#table-of-contents)
 
+# Linear Regression and Scatter Plot
 
+Using scikit-learn to perform linear regression and seaborn to draw scatter plots, I found a decently strong negative correlation between the percentage of Black or Hispanic students at a school and the average SAT score of a school. The percentage of Black or Hispanic students at a school was the independent variable that yielded the lowest root-mean-square error and highest correlation coefficient. This means that this independent variable did the best job in estimating the average SAT score for schools in NYC. For the code and the results of the other linear regressions, please refer to this [Jupyter Notebook](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb) (located in this repository). 
 
-# Development
+![scatterplot](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/bh_scatter.png)
+
 [(Back to top)](#table-of-contents)
 
-<!-- This is the place where you give instructions to developers on how to modify the code.
+# Findings/Conclusion
 
-You could give **instructions in depth** of **how the code works** and how everything is put together.
+- Found negative associations between:
+    - Percent of Black or Hispanic students at a school and the school's average SAT score (r = -0.72)
+    - Percent of students receiving free/reduced lunch at a school and the school's average SAT score (r = -0.70)
+- Found a positive association between:
+    - Percent of Asian or White students at a school and the school's average SAT score (r = 0.71)
+    
+These findings do not demonstrate any sort of causation. In other words, these findings do not indicate that the cause for a school's average SAT score is rooted in a school's ethnic breakdown or the income level of its students. 
 
-You could also give specific instructions to how they can setup their development environment.
+Nonetheless, such associations and the differences in score distributions are enough to raise concern. The data makes it seem that the SAT does not evaluate all students fairly and that students of a certain socioeconomic class or students at particular schools have an advantage over other students when it comes to the SAT. With colleges being able (and willing) to suspend standardized testing requirements and cases pointing towards how the SAT is biased, it is certainly time for higher education to think about how it evaluates students. But more importantly, it's time for the American education system as a whole to reflect on how it may be exacerbating systemic disadvantages some students face and to enact the appropriate change.
 
-Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. -->
+A more detailed conclusion can be found at the end of this [Jupyter Notebook](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb) (located in this repository. 
 
-# Contribute
+# Legality
+
+This personal project was made for the sole intent of applying my skills in Python thus far and as a way to learn new ones. It is intended for non-commercial uses only.
+
+All data was obtained through [Open Data](https://opendata.cityofnewyork.us/), a source that publishes "free public data."
+
 [(Back to top)](#table-of-contents)
-
-<!-- This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
-
-Also this shows how you can add subsections within a section. -->
-
-### Sponsor
-[(Back to top)](#table-of-contents)
-
-<!-- Your project is gaining traction and it is being used by thousands of people(***with this README there will be even more***). Now it would be a good time to look for people or organisations to sponsor your project. This could be because you are not generating any revenue from your project and you require money for keeping the project alive.
-
-You could add how people can sponsor your project in this section. Add your patreon or GitHub sponsor link here for easy access.
-
-A good idea is to also display the sponsors with their organisation logos or badges to show them your love!(*Someday I will get a sponsor and I can show my love*) -->
-
-### Adding new features or fixing bugs
-[(Back to top)](#table-of-contents)
-
-<!-- This is to give people an idea how they can raise issues or feature requests in your projects. 
-
-You could also give guidelines for submitting and issue or a pull request to your project.
-
-Personally and by standard, you should use a [issue template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/ISSUE_TEMPLATE.md) and a [pull request template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/PULL_REQ_TEMPLATE.md)(click for examples) so that when a user opens a new issue they could easily format it as per your project guidelines.
-
-You could also add contact details for people to get in touch with you regarding your project. -->
-
-# License
-[(Back to top)](#table-of-contents)
-
-<!-- Adding the license to README is a good practice so that people can easily refer to it.
-
-Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub > Set file name to LICENSE > GitHub shows LICENSE templates > Choose the one that best suits your project!
-
-I personally add the name of the license and provide a link to it like below. -->
-
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
-
-# Footer
-[(Back to top)](#table-of-contents)
-
-<!-- Let's also add a footer because I love footers and also you **can** use this to convey important info.
-
-Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
-
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
-
-<!-- Add the footer here -->
-
-<!-- ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png) -->
