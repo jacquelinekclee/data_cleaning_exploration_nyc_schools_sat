@@ -3,6 +3,7 @@
 # Table of contents
 
 - [Background](#background)
+- [Usage](#usage)
 - [The Data](#the-data)
 - [Linear Regression and Scatter Plot](#linear-regression-and-scatter-plot)
 - [Development](#development)
@@ -24,6 +25,8 @@ Refer to these Jupyter Notebook viewers to see all the code, tables, and visuali
 - [Data cleaning](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/data_cleaning_sat_ny.ipynb)
 - [Visualization/EDA](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/viz_eda_sat_ny.ipynb)
 - [Linear Regression](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb)
+
+[(Back to top)](#table-of-contents)
 
 # The Data
 
