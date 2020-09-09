@@ -21,9 +21,9 @@ After cleaning the data, creating visualizations and performing exploratory data
 # Usage
 
 Refer to these Jupyter Notebook viewers to see all the code, tables, and visualizations.
-[Data cleaning](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/data_cleaning_sat_ny.ipynb)
-[Visualization/EDA](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/viz_eda_sat_ny.ipynb)
-[Linear Regression](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb)
+- [Data cleaning](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/data_cleaning_sat_ny.ipynb)
+- [Visualization/EDA](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/viz_eda_sat_ny.ipynb)
+- [Linear Regression](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb)
 
 # The Data
 
