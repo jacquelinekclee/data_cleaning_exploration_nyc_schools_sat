@@ -1,5 +1,9 @@
 # Is the SAT Unfair? - NYC School Data Exploration and Linear Regression Project 
 
+![banner](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/IMG_0205.JPG)
+
+[NYC OpenData logo](https://opendata.cityofnewyork.us/), [NYC Department of Education logo](https://wikidownload.com/wiki/york-city-school-calendar/), [SAT logo](https://commons.wikimedia.org/wiki/File:New_SAT_Logo_(vector).svg)
+
 # Table of contents
 
 - [Background](#background)
