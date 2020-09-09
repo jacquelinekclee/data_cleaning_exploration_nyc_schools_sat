@@ -10,7 +10,7 @@
 - [Usage](#usage)
 - [The Data](#the-data)
 - [Linear Regression and Scatter Plot](#linear-regression-and-scatter-plot)
-- [Development](#development)
+- [Findings/Conclusion](#findings/conclusion)
 - [Legality](#legality)
 
 # Background
