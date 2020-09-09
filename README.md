@@ -10,7 +10,7 @@
 - [Usage](#usage)
 - [The Data](#the-data)
 - [Linear Regression and Scatter Plot](#linear-regression-and-scatter-plot)
-- [Findings/Conclusion](#findings/conclusion)
+- [Findings and Conclusion](#findings-and-conclusion)
 - [Legality](#legality)
 
 # Background
@@ -55,7 +55,7 @@ Using scikit-learn to perform linear regression and seaborn to draw scatter plot
 
 [(Back to top)](#table-of-contents)
 
-# Findings/Conclusion
+# Findings and Conclusion
 
 - Found negative associations between:
     - Percent of Black or Hispanic students at a school and the school's average SAT score (r = -0.72)
