@@ -18,16 +18,23 @@ After cleaning the data, creating visualizations and performing exploratory data
 
 [(Back to top)](#table-of-contents)
 
+# Usage
+
+Refer to these Jupyter Notebook viewers to see all the code, tables, and visualizations.
+[Data cleaning](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/data_cleaning_sat_ny.ipynb)
+[Visualization/EDA](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/viz_eda_sat_ny.ipynb)
+[Linear Regression](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb)
+
 # The Data
 
-For how I cleaned the data, please refer to this [Jupyter Notebook](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/data_cleaning_sat_ny.ipynb) (located in this repository).
+For how I cleaned the data, please refer to this [Jupyter Notebook viewer](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/data_cleaning_sat_ny.ipynb).
 
 Here are some example visualizations. The barplot shows the distribution of NYC schools' average SAT scores; the center hovers around 1200 out of a maximum score of 2400 and there are several outliers. The boxplot shows how 'frl_percent,' the percent of students at a given school who receive free/reduced lunches, values differ across schools' average SAT scores in the different score ranges.
 
 ![boxplot](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/sat_boxplot.png?raw=true)
 ![barplot](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/frl_barplot.png?raw=true)
 
-Below is an example histograms drawn to compare the SAT score distributions of schools with demographic against each other, as well as the expected nationwide distribution. This example illustrates that NYC schools with predominantly Asian or White students often score at or above the nationwide average. To see the code that created these visualizations and a more in depth explanation of them, refer to this [Jupyter Notebook](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/viz_eda_sat_ny.ipynb) (located in this repository)
+Below is an example histograms drawn to compare the SAT score distributions of schools with demographic against each other, as well as the expected nationwide distribution. This example illustrates that NYC schools with predominantly Asian or White students often score at or above the nationwide average. To see the code that created these visualizations and a more in depth explanation of them, refer to this [Jupyter Notebook viewer](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/viz_eda_sat_ny.ipynb)
 
 ![histogram](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/aw_hist.png?raw=true)
 
@@ -35,7 +42,7 @@ Below is an example histograms drawn to compare the SAT score distributions of s
 
 # Linear Regression and Scatter Plot
 
-Using scikit-learn to perform linear regression and seaborn to draw scatter plots, I found a decently strong negative correlation between the percentage of Black or Hispanic students at a school and the average SAT score of a school. The percentage of Black or Hispanic students at a school was the independent variable that yielded the lowest root-mean-square error and highest correlation coefficient. This means that this independent variable did the best job in estimating the average SAT score for schools in NYC. For the code and the results of the other linear regressions, please refer to this [Jupyter Notebook](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb) (located in this repository). 
+Using scikit-learn to perform linear regression and seaborn to draw scatter plots, I found a decently strong negative correlation between the percentage of Black or Hispanic students at a school and the average SAT score of a school. The percentage of Black or Hispanic students at a school was the independent variable that yielded the lowest root-mean-square error and highest correlation coefficient. This means that this independent variable did the best job in estimating the average SAT score for schools in NYC. For the code and the results of the other linear regressions, please refer to this [Jupyter Notebook viewer](https://nbviewer.jupyter.org/github/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/linear_regression_sat_ny.ipynb). 
 
 ![scatterplot](https://github.com/jacquelinekclee/data_cleaning_exploration_nyc_schools_sat/blob/master/bh_scatter.png)
 
